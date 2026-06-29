@@ -5,93 +5,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sarath Kumar | Linux & AI Automation Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <style>
-        body { background-color: #0f172a; color: #e2e8f0; font-family: 'Inter', sans-serif; }
-        .gradient-text { background: linear-gradient(to right, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .card { background: rgba(30, 41, 59, 0.5); border: 1px solid rgba(51, 65, 85, 1); border-radius: 12px; transition: 0.3s; }
-        .card:hover { border-color: #38bdf8; transform: translateY(-5px); }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #020617; color: #f8fafc; }
+        .tech-font { font-family: 'Fira Code', monospace; }
+        .glass { background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(51, 65, 85, 0.5); }
+        .accent-border { border-left: 4px solid #38bdf8; }
+        .card-hover:hover { border-color: #38bdf8; transform: translateY(-2px); transition: all 0.3s ease; }
     </style>
 </head>
-<body class="p-6 md:p-12">
+<body class="max-w-5xl mx-auto px-6 py-12 md:py-24">
 
-    <main class="max-w-4xl mx-auto">
-        <!-- HEADER -->
-        <header class="mb-16 text-center md:text-left">
-            <h1 class="text-5xl font-bold mb-2">Sarath Kumar <span class="text-blue-400">R.</span></h1>
-            <p class="text-xl text-slate-400 mb-6 font-mono">Linux Systems | Cybersecurity | AI Automation</p>
-            <div class="flex flex-wrap justify-center md:justify-start gap-4">
-                <a href="mailto:sarathkumar.rrk@gmail.com" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg font-medium"><i class="fas fa-envelope mr-2"></i> Email Me</a>
-                <a href="https://github.com/YOUR_GITHUB" target="_blank" class="bg-slate-800 hover:bg-slate-700 px-4 py-2 rounded-lg font-medium"><i class="fab fa-github mr-2"></i> GitHub</a>
-                <a href="#" target="_blank" class="bg-slate-800 hover:bg-slate-700 px-4 py-2 rounded-lg font-medium"><i class="fab fa-linkedin mr-2"></i> LinkedIn</a>
+    <!-- HERO SECTION -->
+    <header class="mb-20">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-center md:text-left">
+                <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-4">
+                    Sarath <span class="text-sky-400">Kumar</span>
+                </h1>
+                <p class="tech-font text-sky-400 text-lg mb-6">/ Linux Systems / Cybersecurity / AI Automation</p>
+                <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+                    <a href="mailto:sarathkumar.rrk@gmail.com" class="glass px-5 py-2.5 rounded-full hover:bg-sky-500/10 transition flex items-center gap-2">
+                        <i class="fa-regular fa-envelope text-sky-400"></i> Email
+                    </a>
+                    <a href="https://github.com/YOUR_GITHUB" target="_blank" class="glass px-5 py-2.5 rounded-full hover:bg-sky-500/10 transition flex items-center gap-2">
+                        <i class="fa-brands fa-github text-sky-400"></i> GitHub
+                    </a>
+                    <a href="#" class="glass px-5 py-2.5 rounded-full hover:bg-sky-500/10 transition flex items-center gap-2">
+                        <i class="fa-brands fa-linkedin text-sky-400"></i> LinkedIn
+                    </a>
+                </div>
             </div>
-        </header>
+            <div class="hidden md:block glass p-6 rounded-2xl">
+                <p class="tech-font text-sm text-slate-400">
+                    <span class="text-pink-500">const</span> engineer = {<br>
+                    &nbsp;&nbsp;location: <span class="text-yellow-400">"Latvia"</span>,<br>
+                    &nbsp;&nbsp;relocation: <span class="text-emerald-400">true</span>,<br>
+                    &nbsp;&nbsp;status: <span class="text-yellow-400">"Ready for Ops"</span><br>
+                    };
+                </p>
+            </div>
+        </div>
+    </header>
 
-        <!-- EXPERIENCE SECTION -->
-        <section class="mb-16">
-            <h2 class="text-2xl font-bold mb-8 border-b border-slate-700 pb-2 text-blue-400">Professional Experience</h2>
-            
-            <div class="space-y-8">
-                <!-- Current Job -->
-                <div class="card p-6">
-                    <div class="flex justify-between items-start mb-2">
-                        <h3 class="text-xl font-bold">AI Automation & Integration Specialist</h3>
-                        <span class="text-blue-400 font-mono">2026 - Present</span>
+    <!-- MAIN GRID -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        
+        <!-- LEFT COLUMN: SKILLS & EDUCATION -->
+        <div class="space-y-12">
+            <section>
+                <h2 class="text-xs uppercase tracking-widest text-slate-500 font-bold mb-6">Expertise</h2>
+                <div class="flex flex-wrap gap-2 text-sm">
+                    <span class="glass px-3 py-1 rounded-md">Linux Administration</span>
+                    <span class="glass px-3 py-1 rounded-md">SOC Operations</span>
+                    <span class="glass px-3 py-1 rounded-md">Network Security</span>
+                    <span class="glass px-3 py-1 rounded-md">n8n Automation</span>
+                    <span class="glass px-3 py-1 rounded-md">Self-hosted LLMs</span>
+                    <span class="glass px-3 py-1 rounded-md">SIEM / Splunk</span>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-xs uppercase tracking-widest text-slate-500 font-bold mb-6">Education</h2>
+                <div class="space-y-4">
+                    <div>
+                        <p class="font-bold text-slate-200">M.Sc. Cybersecurity</p>
+                        <p class="text-sm text-slate-400">Riga Technical University, Latvia</p>
                     </div>
-                    <p class="text-slate-300 italic mb-4">Herbs Are My World • Nicosia, Cyprus</p>
-                    <ul class="list-disc ml-5 text-slate-400 space-y-2">
-                        <li>Deploying self-hosted AI systems (Ollama, LocalAI) on secure on-prem infrastructure.</li>
-                        <li>Designing n8n workflow automations and REST API integrations.</li>
-                        <li>Managing NAS-based storage environments and automated backup pipelines.</li>
-                    </ul>
-                </div>
-
-                <!-- Cybersecurity -->
-                <div class="card p-6">
-                    <div class="flex justify-between items-start mb-2">
-                        <h3 class="text-xl font-bold">Cybersecurity Intern (SOC)</h3>
-                        <span class="text-slate-500 font-mono">2025</span>
+                    <div>
+                        <p class="font-bold text-slate-200">B.E. Computer Science</p>
+                        <p class="text-sm text-slate-400">GCE, India</p>
                     </div>
-                    <p class="text-slate-300 italic mb-4">Red Team Academy • India</p>
-                    <ul class="list-disc ml-5 text-slate-400 space-y-1">
-                        <li>Monitored security alerts in Splunk SIEM and performed incident triage.</li>
-                        <li>Conducted vulnerability scanning and threat simulation (MITRE ATT&CK).</li>
-                    </ul>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
-        <!-- PROJECTS SECTION -->
-        <section class="mb-16">
-            <h2 class="text-2xl font-bold mb-8 border-b border-slate-700 pb-2 text-blue-400">Featured Projects</h2>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="card p-6">
-                    <h3 class="font-bold text-lg mb-2">Splunk SIEM Lab</h3>
-                    <p class="text-slate-400 text-sm">Real-time monitoring dashboard for brute-force detection and log analysis.</p>
-                </div>
-                <div class="card p-6">
-                    <h3 class="font-bold text-lg mb-2">n8n AI Workflows</h3>
-                    <p class="text-slate-400 text-sm">Automated business operations integrating custom LLMs with CRM and Webhooks.</p>
-                </div>
-            </div>
-        </section>
+        <!-- RIGHT COLUMN: EXPERIENCE -->
+        <div class="md:col-span-2 space-y-12">
+            <section>
+                <h2 class="text-xs uppercase tracking-widest text-slate-500 font-bold mb-8">Work Experience</h2>
+                
+                <div class="space-y-10">
+                    <!-- Current Role -->
+                    <div class="accent-border pl-6 relative">
+                        <div class="absolute w-3 h-3 bg-sky-400 rounded-full -left-1.5 top-1.5 shadow-[0_0_10px_#38bdf8]"></div>
+                        <h3 class="text-xl font-bold text-slate-100">AI Automation Specialist</h3>
+                        <p class="text-sky-400 tech-font text-sm mb-4">Herbs Are My World | Cyprus | 2026 — Present</p>
+                        <ul class="text-slate-400 text-sm space-y-2 list-disc ml-4">
+                            <li>Deploying self-hosted LLMs (Ollama) on secure on-prem hardware.</li>
+                            <li>Building n8n workflow automations & API integrations.</li>
+                            <li>Managing privacy-first infrastructure and NAS storage.</li>
+                        </ul>
+                    </div>
 
-        <!-- EDUCATION -->
-        <section class="mb-16">
-            <h2 class="text-2xl font-bold mb-4 border-b border-slate-700 pb-2 text-blue-400">Education</h2>
-            <div class="flex justify-between items-center">
-                <div>
-                    <p class="font-bold text-lg">M.Sc. in Cybersecurity</p>
-                    <p class="text-slate-400">Riga Technical University, Latvia</p>
-                </div>
-                <span class="text-slate-500">2024</span>
-            </div>
-        </section>
+                    <!-- Cyber Internship -->
+                    <div class="accent-border pl-6 border-slate-700">
+                        <h3 class="text-xl font-bold text-slate-200">Cybersecurity Intern (SOC)</h3>
+                        <p class="text-slate-500 tech-font text-sm mb-4">Red Team Academy | India | 2025</p>
+                        <p class="text-slate-400 text-sm">Focused on Splunk SIEM log analysis, vulnerability assessments, and threat simulation using MITRE ATT&CK framework.</p>
+                    </div>
 
-        <footer class="text-center text-slate-600 text-sm mt-20">
-            &copy; 2026 Sarath Kumar Radhakrishnan. Built with Code & Linux.
-        </footer>
-    </main>
+                    <!-- IT Support -->
+                    <div class="accent-border pl-6 border-slate-700">
+                        <h3 class="text-xl font-bold text-slate-200">IT & Network Support Engineer</h3>
+                        <p class="text-slate-500 tech-font text-sm mb-4">Acute Technologies | India | 2020 — 2022</p>
+                        <p class="text-slate-400 text-sm">Managed 60+ Linux environments, troubleshooting VPN/DNS/DHCP issues and reducing ticket escalations by 30%.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-xs uppercase tracking-widest text-slate-500 font-bold mb-8">Current Projects</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="glass p-5 rounded-xl card-hover">
+                        <h4 class="font-bold mb-2">SIEM Detection Lab</h4>
+                        <p class="text-xs text-slate-500">Brute-force detection and custom alerting dashboards in Splunk.</p>
+                    </div>
+                    <div class="glass p-5 rounded-xl card-hover">
+                        <h4 class="font-bold mb-2">Secure AI Gateway</h4>
+                        <p class="text-xs text-slate-500">API security layers for self-hosted LLM automation pipelines.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer class="mt-24 pt-8 border-t border-slate-800 text-center">
+        <p class="tech-font text-xs text-slate-600">Built with Code & Linux Bash. © 2026 Sarath Kumar.</p>
+    </footer>
 
 </body>
 </html>
